@@ -28,18 +28,37 @@
           </a>
           <a class="hero__phone" href="tel:+78005555555">8 800 555-55-55</a>
         </div>
-        <div class="hero__info">
-          <ul class="hero__list">
-            <li class="hero__list-item">Тренажёрный зал</li>
-            <li class="hero__list-item">Групповые занятия</li>
-            <li class="hero__list-item">Кардио-зона</li>
-          </ul>
-          <div class="hero__text">
-            <p class="hero__text-subtitle">Омск</p>
-            <h1 class="hero__text-title">Фитнес Центр</h1>
+        <div class="hero__data">
+          <div class="hero__inner">
+            <div class="hero__info">
+              <ul class="hero__list">
+                <li class="hero__list-item">Тренажёрный зал</li>
+                <li class="hero__list-item">Групповые занятия</li>
+                <li class="hero__list-item">Кардио-зона</li>
+              </ul>
+              <div class="hero__text">
+                <p class="hero__text-subtitle">Омск</p>
+                <h1 class="hero__text-title">Фитнес Центр</h1>
+              </div>
+            </div>
+            <a class="hero__link" href="#">Купить абонемент</a>
+          </div>
+          <div class="hero__image">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/webp"
+                srcset="./img/hero-desktop@1x.webp 1x, ./img/hero-desktop@2x.webp 2x">
+              <source media="(min-width: 1366px)" type="image/jpeg"
+                srcset="./img/hero-desktop@1x.jpg 1x, ./img/hero-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+                srcset="./img/hero-tablet@1x.webp 1x, ./img/hero-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/jpeg"
+                srcset="./img/hero-tablet@1x.jpg 1x, ./img/hero-tablet@2x.jpg 2x">
+              <img class="hero__image-picture" src="./img/hero-tablet@1x.jpg" alt="Изображение спортсмена" width="324"
+                height="390" srcset="./img/hero-tablet@2x.jpg 2x">
+            </picture>
           </div>
         </div>
-        <a class="hero__link" href="#">Купить абонемент</a>
+
       </div>
     </section>
 
