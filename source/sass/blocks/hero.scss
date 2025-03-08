@@ -15,6 +15,10 @@
   }
 }
 
+.hero__logo {
+  pointer-events: none;
+}
+
 .hero__header {
   display: flex;
   flex-direction: row;
@@ -66,6 +70,7 @@
 }
 
 .hero__phone {
+  position: relative;
   font-family: $roboto-bold;
   font-size: 22px;
   line-height: 22px;
@@ -85,6 +90,40 @@
     padding-top: 2px;
     margin-right: -1px;
   }
+
+  &:hover {
+    color:#1c3374;
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    color: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    color: #102654;
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.hero__phone::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #102654;
+  transform: scaleX(0);
+}
+
+.hero__phone:active::after {
+  transform: scaleX(1);
 }
 
 .hero__list {
@@ -187,6 +226,30 @@
     margin-left: 190px;
     margin-top: 39px;
     padding: 25px 79px 25px 80px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #103aae;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #102654;
+  }
+
+  &:focus-visible {
+    background-color: #ffffff;
+    opacity: 0.8;
+    border: 2px solid #000000;
+    color: #103aae;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
