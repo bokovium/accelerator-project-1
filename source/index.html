@@ -45,9 +45,9 @@
           </div>
           <div class="hero__image">
             <picture>
-              <source media="(min-width: 1366px)"  width="500" height="524" type="image/webp"
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
                 srcset="./img/hero-desktop@1x.webp 1x, ./img/hero-desktop@2x.webp 2x">
-              <source media="(min-width: 1366px)"  width="500" height="524" type="image/jpeg"
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/jpeg"
                 srcset="./img/hero-desktop@1x.jpg 1x, ./img/hero-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
                 srcset="./img/hero-tablet@1x.webp 1x, ./img/hero-tablet@2x.webp 2x">
@@ -74,10 +74,33 @@
             есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="about__picture">
-          <img class="about__picture-img" src="#" width="320" height="280" alt="Изображение зала">
+          <picture>
+            <source media="(min-width: 1366px)" width="660" height="400" type="image/webp"
+              srcset="./img/gym-desktop@1x.webp 1x, ./img/gym-desktop@2x.webp 2x">
+            <source media="(min-width: 1366px)" width="600" height="400" type="image/jpeg"
+              srcset="./img/gym-desktop@1x.jpg 1x, ./img/gym-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+              srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+              srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+            <img class="about__picture-image" src="./img/gym-mobile@1x.jpg" alt="Изображение зала" width="320"
+              height="280" srcset="./img/gym-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="about__video">
-          <img class="about__video-preview" src="#" width="320" height="170" alt="Превью видео">
+          <picture>
+            <source media="(min-width: 1366px)" width="360" height="230" type="image/webp"
+              srcset="./img/preview-desktop@1x.webp 1x, ./img/preview-desktop@2x.webp 2x">
+            <source media="(min-width: 1366px)" width="360" height="230" type="image/jpeg"
+              srcset="./img/preview-desktop@1x.jpg 1x, ./img/preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="270" height="170" type="image/webp"
+              srcset="./img/preview-tablet@1x.webp 1x, ./img/preview-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" width="270" height="170" type="image/jpeg"
+              srcset="./img/preview-tablet@1x.jpg 1x, ./img/preview-tablet@2x.jpg 2x">
+            <img class="about__video-image" src="./img/preview-mobile@1x.jpg" alt="Превью видео" width="320"
+              height="270" srcset="./img/preview-mobile@2x.jpg 2x">
+          </picture>
+          <button class="about__video-button" type="button"></button>
         </div>
       </div>
     </section>
