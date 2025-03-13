@@ -1,14 +1,34 @@
+.about__container {
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px 120px 45px;
+    position: relative;
+  }
+}
+
 .about__info {
   padding: 41px 15px 20px 15px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   & p:nth-child(3) {
-  padding-top: 21px;
-  font-family: $roboto-regular;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 22px;
-  color: #102654;
-  letter-spacing: -0.6px;
+    padding-top: 21px;
+    font-family: $roboto-regular;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #102654;
+    letter-spacing: -0.6px;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      font-size: 17px;
+      line-height: 24px;
+      padding: 34px 103px 0 102px;
+      margin: 0;
+      margin: 0 -26px;
+    }
   }
 
   & p:nth-child(4) {
@@ -23,6 +43,13 @@
   font-size: 32px;
   line-height: 32px;
   color: #102654;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+    padding-top: 1px;
+  }
 }
 
 .about__info-subtitle {
@@ -32,35 +59,69 @@
   font-size: 18px;
   line-height: 20px;
   color: #102654;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 21px;
+    padding-top: 20px;
+    letter-spacing: -0.5px;
+    margin-right: 2px;
+  }
 }
 
 .about__picture {
   padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+  }
 }
 
 .about__video-image {
   height: 170px;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 216px;
+    object-fit: contain;
+    top: -32px;
+    position: absolute;
+    width: 289px;
+  }
+}
+
+.about__video iframe {
+  border: none;
+  width: 100%;
 }
 
 .about__video {
   position: relative;
   padding-top: 31px;
 
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    height: 170px;
+    top: 546px;
+    position: absolute;
+    overflow: hidden;
+    right: 249px;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top:31px;
+    top: 31px;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(20, 54, 122, 0.5);
     z-index: 1;
     height: 170px;
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 270px;
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -80,6 +141,12 @@
   cursor: pointer;
   z-index: 2;
   pointer-events: all;
+
+
+  @media (min-width: $tablet-width) {
+    right: -109px;
+    top: 29px;
+  }
 
   &:hover {
     background: #ffffff;
