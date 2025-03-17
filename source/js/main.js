@@ -10,7 +10,7 @@ function loadVideo() {
   iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
   iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
   iframe.allowFullscreen = true;
-  iframe.width = '320px';
+  iframe.width = '270px';
   iframe.height = '170px';
   iframe.style.border = 'none';
 

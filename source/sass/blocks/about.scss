@@ -3,6 +3,11 @@
     padding: 60px 45px 120px 45px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 120px 103px 240px 103px;
+  }
 }
 
 .about__info {
@@ -22,17 +27,37 @@
     letter-spacing: -0.6px;
 
     @media (min-width: $tablet-width) {
+      font-family: $roboto-light;
       text-align: center;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 24px;
-      padding: 34px 103px 0 102px;
+      padding: 35px 100px 0 100px;
       margin: 0;
-      margin: 0 -26px;
+      letter-spacing: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      padding: 0px 114px;
+      padding-top: 93px;
+      padding-left: 0px;
     }
   }
 
   & p:nth-child(4) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    & p:nth-child(4) {
+      display: block;
+      font-family: $roboto-light;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(16, 38, 84, 1);
+      padding: 8px 137px 0px 0px;
+      margin: 0;
+    }
   }
 }
 
@@ -50,6 +75,16 @@
     line-height: 42px;
     padding-top: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    font-size: 54px;
+    line-height: 54px;
+    padding-right: 188px;
+    padding-top: 0px;
+  }
+
+
 }
 
 .about__info-subtitle {
@@ -67,13 +102,25 @@
     letter-spacing: -0.5px;
     margin-right: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 26px;
+    padding-right: 157px;
+    letter-spacing: 0px;
+  }
 }
 
 .about__picture {
   padding-top: 1px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
   }
 }
 
@@ -87,6 +134,14 @@
     top: -32px;
     position: absolute;
     width: 289px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 230px;
+    object-fit: cover;
+    position: absolute;
+    width: 360px;
+    top: 0;
   }
 }
 
@@ -106,6 +161,18 @@
     position: absolute;
     overflow: hidden;
     right: 249px;
+    padding-top: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+    top: 405px;
+    right: 503px;
   }
 
   &::before {
@@ -122,10 +189,16 @@
     @media (min-width: $tablet-width) {
       top: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 230px;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
+    height: 230px;
   }
 }
 
@@ -142,11 +215,19 @@
   z-index: 2;
   pointer-events: all;
 
-
   @media (min-width: $tablet-width) {
     right: -109px;
-    top: 29px;
+    top: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    height: 72px;
+    right: -144px;
+    top: 79px;
+  }
+
+
 
   &:hover {
     background: #ffffff;
@@ -182,6 +263,12 @@
     mask-repeat: no-repeat;
     mask-position: center;
     transform: none;
+
+    @media (min-width: $desktop-width) {
+      mask-image: url("../../img/sprite/play-desktop.svg");
+      top: 29px;
+      right: 28px;
+    }
   }
 
   &:hover::before {
@@ -211,6 +298,13 @@
     height: 72px;
     border-radius: 50%;
     border: 2px solid rgba(237, 2, 51, 0.2);
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      bottom: -14px;
+      right: -14px;
+    }
   }
 
   &:hover::after {
