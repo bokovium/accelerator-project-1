@@ -10,9 +10,18 @@ function loadVideo() {
   iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
   iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
   iframe.allowFullscreen = true;
-  iframe.width = '270px';
-  iframe.height = '170px';
   iframe.style.border = 'none';
+
+  if (window.matchMedia('(min-width: 1366px)').matches) {
+    iframe.width = '360';
+    iframe.height = '230';
+  } else if (window.matchMedia('(min-width: 768px)').matches) {
+    iframe.width = '270';
+    iframe.height = '170';
+  } else {
+    iframe.width = '320';
+    iframe.height = '170';
+  }
 
 
   videoContainer.appendChild(iframe);

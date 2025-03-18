@@ -1,0 +1,132 @@
+.price__container {
+  padding: 40px 15px;
+  background-color: rgba(248, 249, 252, 1);
+}
+
+.price__title {
+  margin: 0;
+  font-family: $alumni-semibold;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgba(16, 38, 84, 1);
+  text-align: center;
+}
+
+.price__background-image {
+  display: none;
+}
+
+.price__list {
+  margin: 0;
+  padding: 32px 0 6px 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  font-family: $roboto-regular;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(16, 38, 84, 1);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.price__info {
+  list-style-type: none;
+  padding: 32px 0 0 0;
+  margin: 0;
+}
+
+.price__tryptych--half {
+  display: none;
+}
+
+.price__tryptych--year {
+  display: none;
+}
+
+.price__tryptych-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 37px;
+}
+
+.price__tryptych-item {
+  padding: 50px 42px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__list-item--active {
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-color:rgba(209, 10, 66, 1);
+  text-decoration-thickness: 2px;
+}
+
+.price__info-title {
+  margin: 0;
+  font-family: $roboto-bold;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgba(16, 38, 84, 1);
+  text-align: center;
+}
+
+.price__info-subtitle {
+  margin: 0;
+  padding-top: 17px;
+  font-family: $roboto-light;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(16, 38, 84, 1);
+  text-align: center;
+}
+
+.price__info-data {
+  padding-top: 65px;
+}
+
+.price__info-value {
+  position: relative;
+  font-family: $roboto-bold;
+  font-size: 48px;
+  line-height: 150%;
+  color: rgba(16, 58, 174, 1);
+  z-index: 0;
+  margin-right: 5px;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    display: block;
+    font-size: 80px;
+    color: rgba(232, 232, 232, 0.48);
+    z-index: -1;
+    top: -31px;
+    right: -47px;
+  }
+}
+
+.price__info-icon {
+  position: relative;
+  z-index: 0;
+}
+
+.price__info-link {
+  margin-top: 18px;
+  padding: 25px 47px;
+  text-transform: uppercase;
+  font-family: $roboto-bold;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(16, 38, 84, 1);
+  border: 2px solid rgba(16, 38, 84, 1);
+}
+
+
