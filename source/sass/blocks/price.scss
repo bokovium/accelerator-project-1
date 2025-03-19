@@ -1,6 +1,31 @@
+.price {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 275px;
+      height: 328px;
+      background-image: url("../../img/inventory@1x.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: -13px;
+      bottom: 13px;
+      transform: rotate(150deg);
+    }
+  }
+}
+
 .price__container {
   padding: 40px 15px;
   background-color: rgba(248, 249, 252, 1);
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 194px;
+  }
 }
 
 .price__title {
@@ -10,6 +35,11 @@
   line-height: 32px;
   color: rgba(16, 38, 84, 1);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .price__background-image {
@@ -30,12 +60,24 @@
   line-height: 16px;
   color: rgba(16, 38, 84, 1);
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 313px;
+    margin-left: 34px;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 37px;
+  }
 }
 
 .price__info {
   list-style-type: none;
   padding: 32px 0 0 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
 }
 
 .price__tryptych--half {
@@ -52,6 +94,10 @@
   flex-direction: column;
   padding: 0;
   gap: 37px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }
 
 .price__tryptych-item {
@@ -60,12 +106,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 42px 65px 42px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .price__list-item--active {
   text-decoration: underline;
   text-underline-offset: 9px;
-  text-decoration-color:rgba(209, 10, 66, 1);
+  text-decoration-color: rgba(209, 10, 66, 1);
   text-decoration-thickness: 2px;
 }
 
@@ -76,6 +128,12 @@
   line-height: 22px;
   color: rgba(16, 38, 84, 1);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 28px;
+  }
 }
 
 .price__info-subtitle {
@@ -86,10 +144,20 @@
   line-height: 22px;
   color: rgba(16, 38, 84, 1);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 23px;
+  }
 }
 
 .price__info-data {
   padding-top: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 }
 
 .price__info-value {
@@ -101,6 +169,11 @@
   z-index: 0;
   margin-right: 5px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-right: 9px;
+  }
+
   &::before {
     content: attr(data-price);
     position: absolute;
@@ -110,11 +183,22 @@
     z-index: -1;
     top: -31px;
     right: -47px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+      top: -38px;
+      right: -62px;
+    }
   }
 }
 
 .price__info-icon {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 42px;
+  }
 }
 
 .price__info-link {
@@ -126,6 +210,9 @@
   line-height: 12px;
   color: rgba(16, 38, 84, 1);
   border: 2px solid rgba(16, 38, 84, 1);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+    padding: 25px 70px;
+  }
 }
-
-
