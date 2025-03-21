@@ -4,24 +4,24 @@
 @import "vendor/normalize";
 
 /* GLOBAL */
-@import "./common/fonts.scss";
-@import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/global";
 
 
 /* BLOCKS */
-@import "./blocks/page.scss";
-@import "./blocks/body.scss";
-@import "./blocks/main.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/about.scss";
-@import "./blocks/price.scss";
-@import "./blocks/games.scss";
-@import "./blocks/juri.scss";
-@import "./blocks/features.scss";
-@import "./blocks/offers.scss";
-@import "./blocks/faq.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/form.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/contacts.scss";
+@import "./blocks/page";
+@import "./blocks/body";
+@import "./blocks/main";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/form";
+@import "./blocks/footer";
+@import "./blocks/contacts";
