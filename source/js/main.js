@@ -32,3 +32,40 @@ function loadVideo() {
 }
 
 videoButton.addEventListener('click', loadVideo);
+
+
+const tabHeader = document.querySelectorAll('.price__list-item');
+const tabContent = document.querySelectorAll('.price__tryptych');
+
+for (const item of tabHeader) {
+  item.addEventListener('click', () => {
+    changeTab(item);
+  });
+
+  item.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      changeTab(item);
+    }
+  });
+}
+
+function changeTab(item) {
+
+  for (const element of tabContent) {
+    element.classList.add('visually-hidden');
+  }
+
+
+  const content = document.querySelector(`#${item.dataset.tab}`);
+  if (content) {
+    content.classList.remove('visually-hidden');
+  }
+
+
+  for (const tab of tabHeader) {
+    tab.classList.remove('price__list-item--active');
+  }
+
+
+  item.classList.add('price__list-item--active');
+}
