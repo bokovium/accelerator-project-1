@@ -284,7 +284,18 @@
           <p class="games__desc-subtitle">Ежегодные соревнования по CrossFit</p>
           <a class="games__desc-link" href="#">Заполнить заявку</a>
         </div>
-        <img class="games__picture" src="#" width="660" height="500" alt="Изображение спортсмена">
+        <picture>
+          <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
+            srcset="./img/games-desktop@1x.webp 1x, ./img/games-desktop@2x.webp 2x">
+          <source media="(min-width: 1366px)" width="660" height="5000" type="image/jpeg"
+            srcset="./img/games-desktop@1x.jpg 1x, ./img/games-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
+            srcset="./img/games-tablet@1x.webp 1x, ./img/games-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
+            srcset="./img/games-tablet@1x.jpg 1x, ./img/games-tablet@2x.jpg 2x">
+          <img class="games__image" src="./img/games-mobile@1x.jpg" alt="Превью Super games" width="290"
+            height="290" srcset="./img/games-mobile@2x.jpg 2x">
+        </picture>
       </div>
     </section>
 
