@@ -264,4 +264,29 @@
     padding: 24px 115px;
     bottom: 99px;
   }
+
+  &:hover {
+    background-color: #ffffff;
+    transition: background-color 1s ease;
+    color: #103aae;
+    transition: color 1s ease;
+  }
+
+  &:focus-visible {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(16, 58, 174, 1);
+    outline: none;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(16, 38, 84, 1);
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
 }
