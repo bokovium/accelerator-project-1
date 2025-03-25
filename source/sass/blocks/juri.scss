@@ -1,0 +1,121 @@
+.juri__container {
+  padding: 37px 30px;
+}
+
+.juri__button {
+  display: none;
+}
+
+.juri__list {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 17px;
+}
+
+.juri__image {
+  object-fit: cover;
+}
+
+.juri__item {
+  position: relative;
+  max-width: 260px;
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      visibility: visible;
+      transition: visibility 1s ease;
+    }
+
+    .juri__item-desc, .juri__features, .juri__item-subtitle {
+      visibility: visible;
+      transition: visibility 1s ease;
+    }
+
+    .juri__item-title {
+      visibility: hidden;
+    }
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(16, 38, 84, 0.89);
+    visibility: hidden;
+  }
+}
+
+.juri__item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 29px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 260px;
+}
+
+.juri__title {
+  font-family: $alumni-semibold;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgba(16, 38, 84, 1);
+  text-align: center;
+  margin: 0;
+}
+
+.juri__item-title {
+  font-family: $roboto-regular;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  margin: 0;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.juri__item-subtitle {
+  font-family: $roboto-regular;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 19px;
+  visibility: hidden;
+}
+
+.juri__item-desc {
+  font-family: $roboto-light;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(182, 189, 204, 1);
+  text-align: center;
+  display: block;
+  padding-top: 8px;
+  padding-left: 2px;
+  visibility: hidden;
+}
+
+.juri__features {
+  padding: 0px 50px 0px 50px;
+  list-style-type: disc;
+  color: white;
+  font-family: $roboto-regular;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+  padding-left: 66px;
+  gap: 13px;
+  visibility: hidden;
+}
