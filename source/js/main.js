@@ -1,3 +1,5 @@
+import './modules/slider.js';
+
 const videoButton = document.querySelector('.about__video-button');
 
 function loadVideo() {
