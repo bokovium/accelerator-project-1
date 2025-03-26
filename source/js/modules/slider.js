@@ -16,6 +16,7 @@ const initSlider = () => {
 
       1366: {
         slidesPerView: 4,
+        spaceBetween: 40
       },
 
       768: {
