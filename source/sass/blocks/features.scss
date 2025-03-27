@@ -10,12 +10,26 @@
   color: rgba(16, 38, 84, 1);
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .features__list {
   list-style-type: none;
   padding-left: 0px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    padding: 39px 45px 58px 45px;
+    grid-column-gap: 31px;
+  }
 }
 
 .features__item {
@@ -24,12 +38,27 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+
   &:nth-child(1) {
     padding: 40px 30px 35px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &:nth-child(5) {
     padding: 35px 30px 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }
 
@@ -43,6 +72,13 @@
   background-clip: text;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+    display: block;
+    padding-top: 11px;
+  }
 }
 
 .features__item-data p {
@@ -52,6 +88,21 @@
   color: rgba(46, 53, 172, 1);
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    line-height: 22px;
+    padding: 0;
+  }
+}
+
+.features__desc {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  flex-direction: column;
+  gap: 12px;
+  }
 }
 
 .features__desc h3 {
@@ -63,6 +114,12 @@
   text-align: center;
   margin: 0;
   padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 20px;
+    padding: 0;
+  }
 }
 
 .features__desc p {
@@ -73,6 +130,13 @@
   text-align: center;
   margin: 0;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
 }
 
 .features__item--dark {
@@ -84,20 +148,38 @@
   gap: 14px;
   margin: 39px 0px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 39px 179px 29px 179px;
+    grid-column: span 2;
+    padding: 24px 75px 35px 75px;
+  }
 }
 
 .features__item--dark .features__item-data p {
-font-family: $roboto-bold;
-font-size: 22px;
-line-height: 22px;
-padding-top: 6px;
+  font-family: $roboto-bold;
+  font-size: 22px;
+  line-height: 22px;
+  padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 26px;
+  }
 }
 
-.features__item--dark p, .features__item--dark span {
+.features__item--dark p,
+.features__item--dark span {
   color: #ffffff;
   margin: 0;
+  text-align: center;
 }
 
 .features__desc--equip p {
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+  padding-top: 10px;
+  }
 }
